@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+.container {
+    min-height: 100vh;
+    background: #F38AB2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .caixa-pessoas {
+    height: 85vh;
+    min-width: 30vw;
+    background: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 0 1.3rem;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.container .caixa-pessoas .titulo h3 {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+.container .caixa-pessoas .pessoa {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.container .caixa-pessoas .pessoa img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.container .caixa-pessoas .pessoa .info {
+    margin-left: 10px;
+}
+
+.container .caixa-pessoas .pessoa .info h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.container .caixa-pessoas .pessoa .info p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: grey;
+}
+
+.container .caixa-pessoas .botao input{
+    width: 100%;
+    height: 2.3rem;
+    
+    border: none;
+    background-color: #F38AB2;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.container .caixa-pessoas .botao input:hover{
+   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container .caixa-pessoas {
+        min-width: 60vw;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .container .caixa-pessoas {
+        min-width: 55vw;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .container .caixa-pessoas {
+        min-width: 50vw;
+    }
+}
+
